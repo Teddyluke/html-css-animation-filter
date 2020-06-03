@@ -126,7 +126,7 @@
 
   0% {transform: rotate(0deg);}
 
-  50% {transform: rotate(280deg);}
+  80% {transform: rotate(280deg);}
 
   100% {transform: rotate(0deg);}
 
@@ -163,16 +163,35 @@
 
 /* ESERCIZIO 13 */
 .ex-13-top-white {
-  animation: giraespera 3s infinite linear;
+  animation: giraespera 5s infinite linear;
 }
 
 @keyframes giraespera {
 
-  0% {top:0; left:100%;}
+  0% {top:-10px; left:-20px;}
 
-  25% {top:100%; left:100%;}
+  25% {top:-10px; left:90%;}
 
-  50% {top:100%; left:0;}
+  50% {top:98%; left:90%;}
 
-  100% {top:0%; left:100%;}
+  75% {top:98%; left:0%;}
+
+  100% {top:-15px; left:-20px;}
+}
+
+.ex-13-bottom-white {
+  animation: giraespera2 5s infinite linear;
+}
+
+@keyframes giraespera2 {
+
+  0% {bottom:-10px; right:-20px;}
+
+  25% {bottom:-10px; right:90%;}
+
+  50% {bottom:98%; right:90%;}
+
+  75% {bottom:98%; right:0%;}
+
+  100% {bottom:-15px; right:-20px;}
 }
